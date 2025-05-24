@@ -1,0 +1,47 @@
+{
+  "name": "react-router-mongodb-crud",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsx ./build.ts",
+    "dev": "cross-env NODE_ENV=development node ./express/server-dev.js",
+    "start": "cross-env NODE_ENV=production node ./build/server.js",
+    "typecheck": "react-router typegen && tsc"
+  },
+  "dependencies": {
+    "@radix-ui/react-toast": "^1.2.4",
+    "@react-router/express": "^7.1.0",
+    "@react-router/node": "^7.1.0",
+    "clsx": "^2.1.1",
+    "compression": "^1.7.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "isbot": "^5.1.17",
+    "mongodb": "^6.12.0",
+    "morgan": "^1.10.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router": "^7.1.0",
+    "uuid": "^11.0.4"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.1.0",
+    "@types/compression": "^1.7.5",
+    "@types/express": "^5.0.0",
+    "@types/express-serve-static-core": "^5.0.1",
+    "@types/fs-extra": "^11.0.4",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "autoprefixer": "^10.4.20",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "vite-plugin-node-polyfills": "^0.22.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  }
+}
