@@ -1,0 +1,19 @@
+:root {
+    --spacing:.25rem;
+    --base1-h: 210;
+    --base1-s: 15%;
+    --base2-h: 210;
+    --base2-s: 5%;
+
+    --primary1-h: 200;
+    --primary1-s: 90%;
+    --primary2-h: 230;
+    --primary2-s: 90%;
+
+    --danger1-h: 0;
+	--danger1-s: 80%;
+    --danger2-h: 5;
+	--danger2-s: 90%;
+
+    --text : hsl(var(--base1-h), var(--base1-s), 0%);
+}

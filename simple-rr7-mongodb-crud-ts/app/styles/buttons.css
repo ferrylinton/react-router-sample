@@ -1,0 +1,53 @@
+.btn {
+    background-image: linear-gradient(var(--btn-bg1), var(--btn-bg2));
+    color: var(--btn-color);
+
+    min-width: 100px;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: 0;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+}
+
+.btn-secondary {
+    --btn-bg1: hsl(var(--base1-h), var(--base1-s), 70%);
+    --btn-bg2: hsl(var(--base2-h), var(--base2-s), 60%);
+    --btn-color: hsl(var(--base1-h), var(--base1-s), 90%);
+
+    &:hover {
+        --btn-bg1: hsl(var(--base1-h), var(--base1-s), 65%);
+        --btn-bg2: hsl(var(--base2-h), var(--base2-s), 55%);
+        --btn-color: hsl(var(--base1-h), var(--base1-s), 100%);
+    }
+}
+
+.btn.btn-primary {
+    --btn-bg1: hsl(var(--primary1-h), var(--primary1-s), 50%);
+    --btn-bg2: hsl(var(--primary2-h), var(--primary2-s), 50%);
+    --btn-color: hsl(var(--primary1-h), var(--primary1-s), 90%);
+
+    &:hover {
+        --btn-bg1: hsl(var(--primary1-h), var(--primary1-s), 45%);
+        --btn-bg2: hsl(var(--primary2-h), var(--primary2-s), 45%);
+        --btn-color: hsl(var(--primary1-h), var(--primary1-s), 100%);
+    }
+}
+
+.btn.btn-danger {
+    --btn-bg1: hsl(var(--danger1-h), var(--danger1-s), 70%);
+    --btn-bg2: hsl(var(--danger2-h), var(--danger2-s), 50%);
+    --btn-color: hsl(var(--danger1-h), var(--danger1-s), 90%);
+
+    &:hover {
+        --btn-bg1: hsl(var(--danger1-h), var(--danger1-s), 65%);
+        --btn-bg2: hsl(var(--danger2-h), var(--danger2-s), 45%);
+        --btn-color: hsl(var(--danger1-h), var(--danger1-s), 100%);
+    }
+}

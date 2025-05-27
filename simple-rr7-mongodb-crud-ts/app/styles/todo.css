@@ -1,0 +1,81 @@
+.todo-list-wrapper,
+.todo-detail-wrapper {
+    --border: hsl(var(--base1-h), var(--base1-s), 75%);
+    --input-focus-border: hsl(var(--primary1-h), var(--primary1-s), 45%);
+    --input-focus-outline: hsl(var(--primary1-h), var(--primary1-s), 70%, 0.3);
+    --primary: hsl(var(--primary1-h), var(--primary1-s), 45%);
+}
+
+.todo-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & ul {
+        display: flex;
+        flex-direction: column;
+
+        & li {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            gap: 1rem;
+            border-bottom: solid 1px var(--border);
+
+            & span{
+                flex-grow: 1;
+            }
+
+            & .form-checkbox {
+                width: 24px;
+                height: 25px;
+                accent-color: var(--primary);
+                border-radius: 0.2rem;
+                padding: 0.2rem 0.5rem;
+                border: solid 1px var(--border);
+
+                &:focus {
+                    border: solid 1px var(--input-focus-border);
+                    outline: 4px solid var(--input-focus-outline);
+                }
+            }
+
+            & a {
+                width: 60px;
+                border: solid 1px var(--border);
+                font-size: 0.85rem;
+                text-transform: uppercase;
+                text-align: center;
+                border-radius: 0.2rem;
+                padding: 0.2rem 0;
+                cursor: pointer;
+
+                &:hover{
+                    color: var(--primary);
+                    border: solid 1px var(--primary);
+                }
+            }
+        }
+    }
+}
+
+.todo-detail-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & table{
+        width: 100%;
+
+        & tr{
+            height: 40px;
+            border-bottom: solid 1px var(--border);
+        }
+
+        & th{
+            text-align: right;
+            padding-right: 1rem;
+        }
+    }
+}

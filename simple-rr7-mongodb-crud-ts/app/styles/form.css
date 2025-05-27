@@ -1,0 +1,41 @@
+.form-input {
+    --input-border: hsl(var(--base1-h), var(--base1-s), 75%);
+    --input-placeholder: hsl(var(--base1-h), var(--base1-s), 90%);
+    --input-focus-border: hsl(var(--primary1-h), var(--primary1-s), 45%);
+    --input-focus-outline: hsl(var(--primary1-h), var(--primary1-s), 70%, 0.3);
+    --primary: hsl(var(--primary1-h), var(--primary1-s), 45%);
+}
+
+.create-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+
+    & input {
+        height: 45px;
+        flex-grow: 1;
+    }
+
+    & button {
+        height: 45px;
+        width: 100px;
+    }
+
+}
+
+.form-input {
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    border: solid 1px var(--input-border);
+
+    &::placeholder {
+        color: var(--input-placeholder);
+    }
+
+    &:focus {
+        border: solid 1px var(--input-focus-border);
+        outline: 4px solid var(--input-focus-outline);
+    }
+}
+
